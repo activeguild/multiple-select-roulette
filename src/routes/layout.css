@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue";
+}
+
+main {
+  padding: 8px;
+}
+
+label {
+  font-size: 20px;
+  letter-spacing: 2px;
+}
