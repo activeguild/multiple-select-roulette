@@ -126,10 +126,11 @@ export default component$(() => {
     } else {
       state.title = "Next items";
     }
+
+    state.targets = extractItems(state.itemsText);
   });
 
   useClientEffect$(() => {
-    state.targets = extractItems(state.itemsText);
 
     // [Note] On the client side, text area values are not reflected.
     if (refItems.value) {
