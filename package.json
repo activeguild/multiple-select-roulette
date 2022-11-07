@@ -22,24 +22,24 @@
     "qwik": "qwik"
   },
   "devDependencies": {
-    "@builder.io/qwik": "0.11.1",
-    "@builder.io/qwik-city": "0.0.112",
+    "@builder.io/qwik": "0.12.1",
+    "@builder.io/qwik-city": "0.0.118",
     "@netlify/vite-plugin-netlify-edge": "1.1.1",
     "@types/chroma-js": "^2.1.4",
-    "@types/eslint": "8.4.9",
+    "@types/eslint": "8.4.10",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.42.0",
     "@typescript-eslint/parser": "5.42.0",
-    "eslint": "8.26.0",
+    "eslint": "8.27.0",
     "eslint-plugin-qwik": "0.12.1",
     "node-fetch": "3.2.10",
     "prettier": "2.7.1",
     "typescript": "4.8.4",
-    "vite": "3.2.2",
+    "vite": "3.2.3",
     "vite-tsconfig-paths": "3.5.2"
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
-    "sass": "^1.55.0"
+    "sass": "^1.56.0"
   }
 }
