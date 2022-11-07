@@ -114,7 +114,7 @@ export default component$(() => {
     if (loc.query.items) {
       state.itemsText = loc.query.items;
     } else {
-      state.itemsText = "Free\r\nHobby\r\nBackend\r\nFrontend\r\nManagement";
+      state.itemsText = "1\r\n2\r\n3\r\n4\r\n5\r\n6\r\n7\r\n8\r\n9\r\n10";
     }
     if (loc.query.counts) {
       state.selectCount = Number(loc.query.counts);
