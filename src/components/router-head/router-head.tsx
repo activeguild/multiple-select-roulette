@@ -1,4 +1,4 @@
-import { component$,useServerMount$ } from "@builder.io/qwik";
+import { component$, useServerMount$ } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 
 /**
@@ -10,7 +10,7 @@ export const RouterHead = component$(() => {
 
   useServerMount$(() => {
     head.title = "Multiple Select Roulette";
-  })
+  });
 
   head.meta.push({
     name: "description",
@@ -30,7 +30,7 @@ export const RouterHead = component$(() => {
   });
   head.meta.push({
     name: "og:url",
-    content: "ttps://multiple-select-roulette.netlify.app/",
+    content: "https://multiple-select-roulette.netlify.app/",
   });
   head.meta.push({
     name: "google-site-verification",
