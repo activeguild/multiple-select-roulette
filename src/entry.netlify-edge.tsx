@@ -5,7 +5,7 @@ import render from "./entry.ssr";
 const qwikCityHandler = (request: Request, context: Context) => {
   console.log(request);
   console.log(context);
-  return qwikCity(render);
+  return qwikCity(render)(request, context);
 };
 
 export default qwikCityHandler;
