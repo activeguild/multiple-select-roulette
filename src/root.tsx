@@ -6,7 +6,11 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 
-export default component$(() => {
+type Props = {
+  lang: string;
+};
+
+export default component$<Props>((props) => {
   /**
    * The root of a QwikCity site always start with the <QwikCity> component,
    * immediately followed by the document's <head> and <body>.
@@ -19,7 +23,7 @@ export default component$(() => {
         <meta charSet="utf-8" />
         <RouterHead />
       </head>
-      <body lang="en">
+      <body lang={props.lang}>
         <RouterOutlet />
         <ServiceWorkerRegister />
       </body>

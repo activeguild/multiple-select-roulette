@@ -15,10 +15,9 @@ import { manifest } from "@qwik-client-manifest";
 import Root from "./root";
 
 export default function (opts: RenderToStreamOptions) {
-  console.log("opts", opts);
-  opts.containerAttributes = { lang: "en" };
+  const lang = opts.containerAttributes ? opts.containerAttributes.lang : "en";
 
-  return renderToStream(<Root />, {
+  return renderToStream(<Root lang={lang} />, {
     manifest,
     ...opts,
     prefetchStrategy: {
