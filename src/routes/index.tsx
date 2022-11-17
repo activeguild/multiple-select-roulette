@@ -6,12 +6,14 @@ import {
   useStyles$,
   useServerMount$,
   useClientEffect$,
+  useContext,
 } from "@builder.io/qwik";
 import { useLocation } from "@builder.io/qwik-city";
 import styles from "./index.css?inline";
 import { Share } from "../components/icons/share";
 import { extractItems, sleep } from "../utils";
 import { JSXNode } from "@builder.io/qwik/jsx-runtime";
+import { i18nContext } from "~/i18nProvider";
 
 type State = {
   title: string;
@@ -29,6 +31,7 @@ type State = {
 
 export default component$(() => {
   useStyles$(styles);
+  const i18nState = useContext(i18nContext);
 
   const state = useStore<State>({
     title: "Next items",
@@ -131,7 +134,6 @@ export default component$(() => {
   });
 
   useClientEffect$(() => {
-
     // [Note] On the client side, text area values are not reflected.
     if (refItems.value) {
       refItems.value.value = state.itemsText;
@@ -168,9 +170,7 @@ export default component$(() => {
   return (
     <div id="app">
       <aside>
-        <p class="description">
-          A roulette allows multiple items to be selected.
-        </p>
+        <p class="description">{i18nState.locale.desctiption}</p>
         <div class="frame">
           <button class="share" onClick$={handleShareClick}>
             <Share />
@@ -192,7 +192,7 @@ export default component$(() => {
               cols={30}
               rows={8}
               onChange$={handleitemsChange}
-              placeholder={"Please type in a newline delimiter."}
+              placeholder={i18nState.locale.placeholder}
             ></textarea>
           </div>
           <div class="row">

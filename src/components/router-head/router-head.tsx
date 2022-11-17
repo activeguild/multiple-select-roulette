@@ -1,5 +1,6 @@
-import { component$, useServerMount$ } from "@builder.io/qwik";
+import { component$, useServerMount$, useContext } from "@builder.io/qwik";
 import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
+import { i18nContext } from "../../i18nProvider";
 
 /**
  * The RouterHead component is placed inside of the document `<head>` element.
@@ -7,22 +8,23 @@ import { useDocumentHead, useLocation } from "@builder.io/qwik-city";
 export const RouterHead = component$(() => {
   const head = useDocumentHead();
   const loc = useLocation();
+  const state = useContext(i18nContext);
 
   useServerMount$(() => {
-    head.title = "Multiple Select Roulette";
+    head.title = state.locale.title;
   });
 
   head.meta.push({
     name: "description",
-    content: "A roulette allows multiple items to be selected.",
+    content: state.locale.desctiption,
   });
   head.meta.push({
     name: "og:description",
-    content: "A roulette allows multiple items to be selected.",
+    content: state.locale.desctiption,
   });
   head.meta.push({
     name: "og:title",
-    content: "Multiple Select Roulette",
+    content: state.locale.title,
   });
   head.meta.push({
     name: "google-site-verification",

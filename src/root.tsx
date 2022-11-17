@@ -6,6 +6,11 @@ import {
 } from "@builder.io/qwik-city";
 import { RouterHead } from "./components/router-head/router-head";
 
+import en from "./locale/en.json";
+import ja from "./locale/ja.json";
+
+import { I18nProvider } from "./i18nProvider";
+
 type Props = {
   lang: string;
 };
@@ -18,15 +23,17 @@ export default component$<Props>((props) => {
    * Dont remove the `<head>` and `<body>` elements.
    */
   return (
-    <QwikCity>
-      <head>
-        <meta charSet="utf-8" />
-        <RouterHead />
-      </head>
-      <body lang={props.lang}>
-        <RouterOutlet />
-        <ServiceWorkerRegister />
-      </body>
-    </QwikCity>
+    <I18nProvider locale={props.lang === "ja" ? ja : en}>
+      <QwikCity>
+        <head>
+          <meta charSet="utf-8" />
+          <RouterHead />
+        </head>
+        <body lang={props.lang}>
+          <RouterOutlet />
+          <ServiceWorkerRegister />
+        </body>
+      </QwikCity>
+    </I18nProvider>
   );
 });
