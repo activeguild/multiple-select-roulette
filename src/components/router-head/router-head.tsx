@@ -34,10 +34,6 @@ export const RouterHead = component$(() => {
     name: "og:url",
     content: "https://multiple-select-roulette.netlify.app/",
   });
-  head.meta.push({
-    name: "google-site-verification",
-    content: "walavZmPPV72FudHuMJymnIjVEk9_be4G5Lm7Rj2EGI",
-  });
 
   return (
     <>
