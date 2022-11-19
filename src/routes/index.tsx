@@ -13,7 +13,7 @@ import styles from "./index.css?inline";
 import { Share } from "../components/icons/share";
 import { extractItems, sleep } from "../utils";
 import { JSXNode } from "@builder.io/qwik/jsx-runtime";
-import { i18nContext } from "~/i18nProvider";
+import { i18nContext } from "../i18nProvider";
 
 type State = {
   title: string;
