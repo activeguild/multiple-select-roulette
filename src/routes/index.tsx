@@ -91,7 +91,7 @@ export default component$(() => {
     }
   });
 
-  const handleTitleChange = $((event: any) => {
+  const handleTitleChange = $(async (event: any) => {
     state.title = (event.target as HTMLInputElement).value;
   });
 
@@ -104,11 +104,11 @@ export default component$(() => {
     window.alert("copied");
   });
 
-  const handleChoicedCountChange = $((event: any) => {
+  const handleChoicedCountChange = $(async (event: any) => {
     state.selectCount = parseInt((event.target as HTMLInputElement).value);
   });
 
-  const handleitemsChange = $((event: any) => {
+  const handleitemsChange = $(async (event: any) => {
     state.itemsText = (event.target as HTMLTextAreaElement).value;
     state.targets = extractItems(state.itemsText);
   });
