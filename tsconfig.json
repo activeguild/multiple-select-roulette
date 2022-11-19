@@ -15,7 +15,8 @@
     "isolatedModules": true,
     "types": ["node", "vite/client"],
     "paths": {
-      "~/*": ["./src/*"]
+      "~/*": ["./src/*"],
+      "@qwik-city-not-found-paths": ["./src/qwik-city/not-found-paths.ts"]
     }
   },
   "include": ["src"]

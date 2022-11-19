@@ -6,6 +6,11 @@ import netlifyEdge from "@netlify/vite-plugin-netlify-edge";
 
 export default defineConfig(() => {
   return {
+    build: {
+      rollupOptions: {
+        external: ["@qwik-city-not-found-paths", "@qwik-city-static-paths"],
+      },
+    },
     plugins: [
       qwikCity(),
       qwikVite({
