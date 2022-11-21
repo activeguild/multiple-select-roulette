@@ -46,7 +46,6 @@ export default component$(() => {
   const refRoulette = useSignal<HTMLDivElement>();
   const refInterval = useSignal<number>();
   const refInterval2 = useSignal<number>();
-  const refItems = useSignal<HTMLTextAreaElement>();
   const loc = useLocation();
 
   const handleTurnClick = $(async () => {
@@ -134,11 +133,6 @@ export default component$(() => {
   });
 
   useClientEffect$(() => {
-    // [Note] On the client side, text area values are not reflected.
-    if (refItems.value) {
-      refItems.value.value = state.itemsText;
-    }
-
     const handleDocumentClick = () => {
       state.finished = false;
     };
@@ -188,12 +182,13 @@ export default component$(() => {
             <label for="items">Items</label>
             <textarea
               id="items"
-              ref={refItems}
               cols={30}
               rows={8}
               onChange$={handleitemsChange}
               placeholder={i18nState.locale.placeholder}
-            ></textarea>
+            >
+              {state.itemsText}
+            </textarea>
           </div>
           <div class="row">
             <label for="selectCount">Select count</label>
