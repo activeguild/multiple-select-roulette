@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "timezone": "Asia/Tokyo",
+  "schedule": ["after 8am on monday", "before 10am on monday"],
+  "packageRules": [
+    {
+      "groupName": "qwik",
+      "matchPackageNames": ["@builder.io/qwik", "@builder.io/qwik-city"]
+    },
+    {
+      "groupName": "vite",
+      "matchPackageNames": ["vite", "vite-tsconfig-pathst"],
+      "matchPackagePrefixes": ["@typescript-eslint/", "eslint"]
+    },
+    {
+      "groupName": "netlify",
+      "matchPackageNames": [
+        "@netlify/edge-functions",
+        "@netlify/vite-plugin-netlify-edge"
+      ]
+    }
+  ],
+  "matchUpdateTypes": ["patch"],
+  "automerge": true,
+  "platformAutomerge": true,
+  "ignoreTests": true
+}
