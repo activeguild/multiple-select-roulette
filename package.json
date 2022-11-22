@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@builder.io/qwik": "0.14.0",
-    "@builder.io/qwik-city": "^0.0.124",
+    "@builder.io/qwik-city": "^0.0.125",
     "@netlify/edge-functions": "^2.0.0",
     "@netlify/vite-plugin-netlify-edge": "1.1.1",
     "@types/chroma-js": "^2.1.4",
