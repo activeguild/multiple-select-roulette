@@ -31,6 +31,7 @@
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "5.44.0",
     "@typescript-eslint/parser": "5.44.0",
+    "esbuild": "^0.15.15",
     "eslint": "8.28.0",
     "eslint-plugin-qwik": "0.14.1",
     "node-fetch": "3.3.0",
