@@ -1,6 +1,7 @@
 import type { Context } from "@netlify/edge-functions";
 import { createQwikCity } from "@builder.io/qwik-city/middleware/netlify-edge";
 import render from "./entry.ssr";
+import qwikCityPlan from "@qwik-city-plan";
 
 const qwikCityHandler = (request: Request, context: Context) => {
   const lang = () => {
@@ -14,7 +15,7 @@ const qwikCityHandler = (request: Request, context: Context) => {
   return createQwikCity({
     render,
     containerAttributes: { lang: lang() },
-    qwikCityPlan: { routes: [] },
+    qwikCityPlan,
   })(request, context);
 };
 

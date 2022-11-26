@@ -8,7 +8,7 @@ export default defineConfig(() => {
   return {
     build: {
       rollupOptions: {
-        external: ["@qwik-city-not-found-paths", "@qwik-city-static-paths"],
+        input: ["src/entry.netlify-edge.tsx", "@qwik-city-plan"],
       },
     },
     plugins: [
