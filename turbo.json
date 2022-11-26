@@ -1,7 +1,0 @@
-{
-  "pipeline": {
-    "qwik:build": {
-      "outputs": ["dist/**"]
-    }
-  }
-}
