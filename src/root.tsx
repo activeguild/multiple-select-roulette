@@ -1,6 +1,6 @@
 import { component$ } from "@builder.io/qwik";
 import {
-  QwikCity,
+  QwikCityProvider,
   RouterOutlet,
   ServiceWorkerRegister,
 } from "@builder.io/qwik-city";
@@ -24,7 +24,7 @@ export default component$<Props>((props) => {
    */
   return (
     <I18nProvider locale={props.lang === "ja" ? ja : en}>
-      <QwikCity>
+      <QwikCityProvider>
         <head>
           <meta charSet="utf-8" />
           <RouterHead />
@@ -33,7 +33,7 @@ export default component$<Props>((props) => {
           <RouterOutlet />
           <ServiceWorkerRegister />
         </body>
-      </QwikCity>
+      </QwikCityProvider>
     </I18nProvider>
   );
 });
