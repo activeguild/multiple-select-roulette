@@ -186,9 +186,7 @@ export default component$(() => {
               rows={8}
               onChange$={handleitemsChange}
               placeholder={i18nState.locale.placeholder}
-            >
-              {state.itemsText}
-            </textarea>
+              value={state.itemsText} />
           </div>
           <div class="row">
             <label for="selectCount">Select count</label>
