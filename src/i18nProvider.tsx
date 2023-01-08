@@ -18,9 +18,9 @@ type Props = {
 
 export const i18nContext = createContext<i18nState>("i18nContext");
 
-export const I18nProvider = component$<Props>(({ locale }) => {
+export const I18nProvider = component$<Props>((props) => {
   const state = useStore<i18nState>({
-    locale,
+    locale: props.locale,
   });
 
   useContextProvider(i18nContext, state);
