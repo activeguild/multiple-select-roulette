@@ -164,6 +164,7 @@ export default component$(() => {
   return (
     <div id="app">
       <aside>
+        <h1>{i18nState.locale.title}</h1>
         <p class="description">{i18nState.locale.desctiption}</p>
         <div class="frame">
           <button class="share" onClick$={handleShareClick}>
@@ -186,7 +187,8 @@ export default component$(() => {
               rows={8}
               onChange$={handleitemsChange}
               placeholder={i18nState.locale.placeholder}
-              value={state.itemsText} />
+              value={state.itemsText}
+            />
           </div>
           <div class="row">
             <label for="selectCount">Select count</label>
