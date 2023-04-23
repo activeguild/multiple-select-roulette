@@ -36,7 +36,7 @@
     "eslint": "8.38.0",
     "eslint-plugin-qwik": "0.102.0",
     "node-fetch": "3.3.1",
-    "prettier": "2.8.7",
+    "prettier": "2.8.8",
     "turbo": "^1.6.3",
     "typescript": "5.0.4",
     "vite": "4.2.1",
