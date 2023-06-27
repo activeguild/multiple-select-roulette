@@ -1,6 +1,6 @@
 import {
   component$,
-  createContext,
+  createContextId,
   useContextProvider,
   useStore,
   Slot,
@@ -16,7 +16,7 @@ type Props = {
   locale: typeof en;
 };
 
-export const i18nContext = createContext<i18nState>("i18nContext");
+export const i18nContext = createContextId<i18nState>("i18nContext");
 
 export const I18nProvider = component$<Props>((props) => {
   const state = useStore<i18nState>({
