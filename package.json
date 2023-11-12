@@ -28,7 +28,7 @@
     "@netlify/edge-functions": "^2.0.0",
     "@netlify/vite-plugin-netlify-edge": "1.1.3",
     "@types/chroma-js": "^2.4.0",
-    "@types/eslint": "8.44.6",
+    "@types/eslint": "8.44.7",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "6.9.1",
     "@typescript-eslint/parser": "6.9.1",
