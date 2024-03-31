@@ -30,8 +30,8 @@
     "@types/chroma-js": "^2.4.0",
     "@types/eslint": "8.56.6",
     "@types/node": "latest",
-    "@typescript-eslint/eslint-plugin": "7.3.1",
-    "@typescript-eslint/parser": "7.3.1",
+    "@typescript-eslint/eslint-plugin": "7.4.0",
+    "@typescript-eslint/parser": "7.4.0",
     "esbuild": "^0.20.0",
     "eslint": "8.57.0",
     "eslint-plugin-qwik": "1.5.1",
@@ -39,7 +39,7 @@
     "prettier": "3.2.5",
     "turbo": "^1.10.6",
     "typescript": "5.4.3",
-    "vite": "5.2.6",
+    "vite": "5.2.7",
     "vite-tsconfig-paths": "4.3.2"
   }
 }
