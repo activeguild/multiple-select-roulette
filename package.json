@@ -27,7 +27,7 @@
     "@builder.io/qwik-city": "^1.1.5",
     "@netlify/edge-functions": "^2.0.0",
     "@netlify/vite-plugin-netlify-edge": "1.1.3",
-    "@types/chroma-js": "^2.4.0",
+    "@types/chroma-js": "^3.0.0",
     "@types/eslint": "8.56.12",
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "7.18.0",
