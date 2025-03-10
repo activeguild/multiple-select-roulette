@@ -40,6 +40,6 @@
     "turbo": "^1.13.2",
     "typescript": "5.8.2",
     "vite": "6.2.1",
-    "vite-tsconfig-paths": "5.0.1"
+    "vite-tsconfig-paths": "5.1.4"
   }
 }
