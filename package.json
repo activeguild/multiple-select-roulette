@@ -37,7 +37,7 @@
     "eslint-plugin-qwik": "1.19.0",
     "node-fetch": "3.3.2",
     "prettier": "3.8.1",
-    "turbo": "^1.13.2",
+    "turbo": "^2.0.0",
     "typescript": "5.9.3",
     "vite": "7.3.1",
     "vite-tsconfig-paths": "6.1.1"
