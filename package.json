@@ -32,7 +32,7 @@
     "@types/node": "latest",
     "@typescript-eslint/eslint-plugin": "8.57.1",
     "@typescript-eslint/parser": "8.57.1",
-    "esbuild": "^0.27.0",
+    "esbuild": "^0.28.0",
     "eslint": "10.1.0",
     "eslint-plugin-qwik": "1.19.2",
     "node-fetch": "3.3.2",
